@@ -18,7 +18,7 @@ gulp.task('build-app', function () {
   return gulp
     .src('app/**/*.ts')
     .pipe(typescript(tscConfig.compilerOptions))
-	.pipe(concat('app.min.js'))
+	//.pipe(concat('app.min.js'))
 	.pipe(uglify())
     .pipe(gulp.dest('dist/app'));
 });
